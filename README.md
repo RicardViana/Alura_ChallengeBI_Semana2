@@ -1,5 +1,7 @@
 # Alura - Challenge BI - Semana 2 - Marketing
 
+# Desafio Proposto
+
 # Como o report foi criado?
 
 ## 1) ETL e Relacionamento entre tabelas
