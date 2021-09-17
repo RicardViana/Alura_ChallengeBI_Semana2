@@ -1,13 +1,23 @@
-# RicardViana-Alura_ChallengeBI_Semana2
+# Alura - Challenge BI - Semana 2 - Marketing
 
+# Como o report foi criado?
 
+## 1) ETL e Relacionamento entre tabelas
 
-# Materiais de apoio
+## 2) Calculos 
 
-Sites:
+## Materiais de apoio 
+
+**Livro:**
+
+https://databinteligencia.com.br/produtos/dominando-o-power-bi/
+
+**Sites:**
 
 https://resultadosdigitais.com.br/blog/o-que-e-cpc-cpm-cpa/
 
 https://cursos.alura.com.br/power-bi-gateway-de-dados-c259
 
 https://www.alura.com.br/artigos/atualizando-relatorios-com-bi-service?utm_source=gnarus&utm_medium=timeline
+
+**Videos:**
