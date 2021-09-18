@@ -22,4 +22,6 @@ https://cursos.alura.com.br/power-bi-gateway-de-dados-c259
 
 https://www.alura.com.br/artigos/atualizando-relatorios-com-bi-service?utm_source=gnarus&utm_medium=timeline
 
+https://leads2b.com/blog/ticket-medio/#:~:text=O%20ticket%20m%C3%A9dio%20%C3%A9%20uma%20m%C3%A9trica%20que%20fornece%20detalhes%20sobre,dividindo%20pelo%20n%C3%BAmero%20de%20clientes.
+
 **Videos:**
