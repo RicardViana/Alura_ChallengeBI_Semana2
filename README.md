@@ -28,6 +28,5 @@ https://neilpatel.com/br/blog/roas-o-que-e/
 
 **Videos:**
 
-https://www.youtube.com/watch?v=KfYXlGwv83A
-
 https://www.youtube.com/watch?v=_swQ5B9VF_8
+
