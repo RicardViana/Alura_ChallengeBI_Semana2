@@ -27,3 +27,7 @@ https://leads2b.com/blog/ticket-medio/#:~:text=O%20ticket%20m%C3%A9dio%20%C3%A9%
 https://neilpatel.com/br/blog/roas-o-que-e/
 
 **Videos:**
+
+https://www.youtube.com/watch?v=KfYXlGwv83A
+
+https://www.youtube.com/watch?v=_swQ5B9VF_8
