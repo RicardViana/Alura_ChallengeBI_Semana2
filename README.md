@@ -26,7 +26,9 @@ https://leads2b.com/blog/ticket-medio/#:~:text=O%20ticket%20m%C3%A9dio%20%C3%A9%
 
 https://neilpatel.com/br/blog/roas-o-que-e/
 
-https://www.zendesk.com.br/blog/taxa-de-conversao/#:~:text=Para%20calcular%20a%20taxa%20de,de%20convers%C3%A3o%20%C3%A9%20de%2030%25.
+https://www.zendesk.com.br/blog/taxa-de-conversao/#:~:text=Para%20calcular%20a%20taxa%20de,de%20convers%C3%A3o%20%C3%A9%20de%2030%25
+
+https://resultadosdigitais.com.br/blog/o-que-taxa-de-conversao/
 
 **Videos:**
 
