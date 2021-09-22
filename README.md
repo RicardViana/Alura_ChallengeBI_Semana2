@@ -54,9 +54,23 @@ Importanto as duas via Power Query e cada base possuindo as seguintes informa√ß√
 
 ![image](https://user-images.githubusercontent.com/62486279/134326305-90c5b05a-f496-4bde-93b7-7e675b36433c.png)
 
-E para auxiliar, foi criado algumas tabelas auxiliares:
+E para auxiliar o projeto, foi criado algumas tabelas auxiliares:
 
+**Calendario**
 
+![image](https://user-images.githubusercontent.com/62486279/134327450-3fd009f5-9715-4629-a478-cf362cdffb5b.png)
+
+**Genero**
+
+![image](https://user-images.githubusercontent.com/62486279/134327656-0daf3209-66d5-4d14-b073-9bc9029dbdbb.png)
+
+**Idade**
+
+![image](https://user-images.githubusercontent.com/62486279/134327692-9457a8ce-c92a-4d12-8143-1be6f9e0b926.png)
+
+**Plataforma do dispositivo**
+
+![image](https://user-images.githubusercontent.com/62486279/134327728-82d85eba-ac8c-4c13-8c4a-6d3f7fe1e033.png)
 
 ## 2) Calculos 
 
