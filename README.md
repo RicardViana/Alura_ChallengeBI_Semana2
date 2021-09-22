@@ -14,7 +14,7 @@ O segundo desafio da **Alura** através do Challenge BI (https://www.alura.com.b
 - Retorno do investimento em publicidade (ROAS) por idade e gênero
 - Valor convertido em compras por dia
 
-Onde foi desenvolvido o report abaixo através do Power BI:
+Onde foi desenvolvido o report abaixo através do Power BI e o background pelo Figma:
 
 ![1632271385455](https://user-images.githubusercontent.com/62486279/134324531-32b01c0f-7804-432d-b80c-cb2c8811739a.jpg)
 
