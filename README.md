@@ -72,7 +72,34 @@ E para auxiliar o projeto, foi criado algumas tabelas auxiliares:
 
 ![image](https://user-images.githubusercontent.com/62486279/134327728-82d85eba-ac8c-4c13-8c4a-6d3f7fe1e033.png)
 
+Com as tabelas se relacionando da seguinte forma:
+
+![image](https://user-images.githubusercontent.com/62486279/134327933-af21138a-d1c4-4e2a-bccc-aa853a85b676.png)
+
+E para cada tabela, algumas tratativa foram realizando:
+
+- Alterando na base **Tabela_dispositivos** e **Tabela_idade_e_genero** valores **null** para **0**
+- Removido a coluna **FIELD4** da tabela **Tabela_idade_e_genero**
+- Calendario criado de forma dinamica com base na tabela **Tabela_dispositivos**
+- Adionado colunas na tabela **Calendario** para auxiliar a organização da tabela
+
 ## 2) Calculos 
+
+Para o calculo das métricas, foram criado a seguintes medidas utilizando funções DAX
+
+Medida   | Dax | Comentário
+-------- | ---------- | ----------
+Total Convertido | SUM(Tabela_idade_e_genero[Valor de conversão de compras])| Somar todo o valor de conversão de compras da tabela **Tabela_idade_e_genero**
+Ticket Medio | VAR Faturmento = <br/> CALCULATE( <br/> SUM(Tabela_dispositivos[Valor de conversão de compras]),<br/> Tabela_dispositivos[Plataforma do dispositivo]<>"All",Tabela_dispositivos[Plataforma]<>"ALL") <br/> VAR QtdCompras =  <br/> CALCULATE( <br/> SUM(Tabela_dispositivos[Compras]), <br/> Tabela_dispositivos[Compras])  <br/> RETURN  <br/> DIVIDE(Faturmento,QtdCompras)| Calcular o ticket médio 
+Total Carrinho - Dispositivo | SUM(Tabela_dispositivos[Adicionados ao carrinho])| Somar o que foi adicionado ao carrinho
+Total Compras - Dispositivo | SUM(Tabela_dispositivos[Compras]) | Somar tudo que foi comprado
+Total Vizualizações - Dispositivo | SUM(Tabela_dispositivos[Visualizações por página])| Somar a quantidade de vizualização 
+ROAS | VAR Faturamento = <br/> CALCULATE(<br/> SUM(Tabela_idade_e_genero[Valor de conversão de compras]),<br/> Tabela_idade_e_genero[Valor de conversão de compras]<>0)<br/> VAR Investimento = <br/> SUM(Tabela_idade_e_genero[Quantia gasta (BRL)])<br/> Return <br/> DIVIDE(Faturamento,Investimento)<br/> | Calcular o retorno do investimento em publicidade
+Total Investido | SUM(Tabela_idade_e_genero[Quantia gasta (BRL)]) | Somar a quantidade investida 
+Total Convertido| SUM(Tabela_idade_e_genero[Valor de conversão de compras]) | Somar a quantidade convertida 
+Total Compras | SUM(Tabela_idade_e_genero[Compras]) | Somar a quantidade de compras 
+Taxa de Conversão | VAR Vizualizacao = <br/> SUM(Tabela_idade_e_genero[Visualizações por página])<br/> Var Conversao =<br/> SUM(Tabela_idade_e_genero[Compras])<br/> RETURN <br/> DIVIDE(Conversao,Vizualizacao) | Calcular a taxa de conversão
+Custo por Clique | VAR valorin = <br/> [Total Investido]<br/> VAR numeroclique = <br/> SUM(Tabela_idade_e_genero[Cliques no link])<br/> return <br/> DIVIDE(valorin,numeroclique)<br/> | Calcular o custo por clique
 
 ## Materiais de apoio 
 
@@ -99,6 +126,8 @@ https://resultadosdigitais.com.br/blog/o-que-taxa-de-conversao/
 **Videos:**
 
 https://www.youtube.com/watch?v=_swQ5B9VF_8
+
+https://www.youtube.com/watch?v=Y93cUZBA130&t=3487s
 
 
 
