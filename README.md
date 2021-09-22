@@ -2,7 +2,7 @@
 
 # Desafio Proposto
 
-O segundo desafio da **Alura** através do Challenge BI (https://www.alura.com.br/challenges/bi) onde agora a **Alura Shop** (empresa fictícia) após uma campanha de publicidade, solicitou através gerência, o resultando dessa campanha através das seguintes métricas:
+O segundo desafio da **Alura** através do Challenge BI (https://www.alura.com.br/challenges/bi) onde agora a **Alura Shop** (empresa fictícia) após uma campanha de publicidade, solicitou através da gerência de marketing, o resultando da campanha através das seguintes métricas:
 
 - Total de compras
 - Total de valor convertido em compras
@@ -20,7 +20,7 @@ Onde foi desenvolvido o report abaixo através do Power BI:
 
 Link: https://bit.ly/dashboarddemarketing
 
-E como no outro desafio, tivemos as demandas e controle do projeto pelo Trello:
+E como no outro desafio, tivemos as demandas e controle do projeto via Trello:
 
 ![image](https://user-images.githubusercontent.com/62486279/134324954-49173e92-5ec4-489a-89fe-dc03aa8e85db.png)
 
@@ -85,21 +85,21 @@ E para cada tabela, algumas tratativa foram realizando:
 
 ## 2) Calculos 
 
-Para o calculo das métricas, foram criado a seguintes medidas utilizando funções DAX
+Para o calcular as métricas, foram criado a seguintes medidas utilizando funções DAX
 
 Medida   | Dax | Comentário
 -------- | ---------- | ----------
-Total Convertido | SUM(Tabela_idade_e_genero[Valor de conversão de compras])| Somar todo o valor de conversão de compras da tabela **Tabela_idade_e_genero**
-Ticket Medio | VAR Faturmento = <br/> CALCULATE( <br/> SUM(Tabela_dispositivos[Valor de conversão de compras]),<br/> Tabela_dispositivos[Plataforma do dispositivo]<>"All",Tabela_dispositivos[Plataforma]<>"ALL") <br/> VAR QtdCompras =  <br/> CALCULATE( <br/> SUM(Tabela_dispositivos[Compras]), <br/> Tabela_dispositivos[Compras])  <br/> RETURN  <br/> DIVIDE(Faturmento,QtdCompras)| Calcular o ticket médio 
-Total Carrinho - Dispositivo | SUM(Tabela_dispositivos[Adicionados ao carrinho])| Somar o que foi adicionado ao carrinho
-Total Compras - Dispositivo | SUM(Tabela_dispositivos[Compras]) | Somar tudo que foi comprado
-Total Vizualizações - Dispositivo | SUM(Tabela_dispositivos[Visualizações por página])| Somar a quantidade de vizualização 
+Total Convertido | SUM(Tabela_idade_e_genero[Valor de conversão de compras])| Calcular o valor de conversão de compras
+Ticket Medio | VAR Faturmento = <br/> CALCULATE( <br/> SUM(Tabela_dispositivos[Valor de conversão de compras]),<br/> Tabela_dispositivos[Plataforma do dispositivo]<>"All",Tabela_dispositivos[Plataforma]<>"ALL") <br/> VAR QtdCompras =  <br/> CALCULATE( <br/> SUM(Tabela_dispositivos[Compras]), <br/> Tabela_dispositivos[Compras])  <br/> RETURN  <br/> DIVIDE(Faturmento,QtdCompras)| Calcular o ticket médio
+Total Carrinho - Dispositivo | SUM(Tabela_dispositivos[Adicionados ao carrinho])| Calcular o que foi adicionado ao carrinho 
+Total Compras - Dispositivo | SUM(Tabela_dispositivos[Compras]) | Calcular as compras
+Total Vizualizações - Dispositivo | SUM(Tabela_dispositivos[Visualizações por página])| Calcular a vizualização 
 ROAS | VAR Faturamento = <br/> CALCULATE(<br/> SUM(Tabela_idade_e_genero[Valor de conversão de compras]),<br/> Tabela_idade_e_genero[Valor de conversão de compras]<>0)<br/> VAR Investimento = <br/> SUM(Tabela_idade_e_genero[Quantia gasta (BRL)])<br/> Return <br/> DIVIDE(Faturamento,Investimento)<br/> | Calcular o retorno do investimento em publicidade
-Total Investido | SUM(Tabela_idade_e_genero[Quantia gasta (BRL)]) | Somar a quantidade investida 
-Total Convertido| SUM(Tabela_idade_e_genero[Valor de conversão de compras]) | Somar a quantidade convertida 
-Total Compras | SUM(Tabela_idade_e_genero[Compras]) | Somar a quantidade de compras 
-Taxa de Conversão | VAR Vizualizacao = <br/> SUM(Tabela_idade_e_genero[Visualizações por página])<br/> Var Conversao =<br/> SUM(Tabela_idade_e_genero[Compras])<br/> RETURN <br/> DIVIDE(Conversao,Vizualizacao) | Calcular a taxa de conversão
-Custo por Clique | VAR valorin = <br/> [Total Investido]<br/> VAR numeroclique = <br/> SUM(Tabela_idade_e_genero[Cliques no link])<br/> return <br/> DIVIDE(valorin,numeroclique)<br/> | Calcular o custo por clique
+Total Investido | SUM(Tabela_idade_e_genero[Quantia gasta (BRL)]) | Calcular quantidade investida 
+Total Convertido| SUM(Tabela_idade_e_genero[Valor de conversão de compras]) | Calcular a quantidade convertida 
+Total Compras | SUM(Tabela_idade_e_genero[Compras]) | Calcular a quantidade de compras 
+Taxa de Conversão | VAR Vizualizacao = <br/> SUM(Tabela_idade_e_genero[Visualizações por página])<br/> VAR Conversao =<br/> SUM(Tabela_idade_e_genero[Compras])<br/> RETURN <br/> DIVIDE(Conversao,Vizualizacao) | Calcular a taxa de conversão
+Custo por Clique | VAR valorin = <br/> [Total Investido]<br/> VAR numeroclique = <br/> SUM(Tabela_idade_e_genero[Cliques no link])<br/> RETURN <br/> DIVIDE(valorin,numeroclique)<br/> | Calcular o custo por clique
 
 ## Materiais de apoio 
 
